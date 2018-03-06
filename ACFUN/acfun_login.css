@@ -1,0 +1,369 @@
+/*公用样式*/
+body{
+	font:13px "microsoft yahei",Arial,sans-serif;
+	background-color:#f8f8f8;
+	margin:0;
+	padding:0;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+input{border:0;}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:bottom;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#FF0700;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+/*开始定义登陆界面头部样式*/
+/*背景颜色*/
+header{
+	background: #FFFFFF;
+	width:100%;
+  min-width: 1160px;
+	height:40px;
+	border-bottom:1px solid #FFADCC;
+}
+#nav{
+	width:1042px;
+	margin:0 auto;
+}
+header ul{
+	height:41px;
+	margin-left: 30px;
+}
+header li{
+	height:40px;
+	float:left;
+	margin-right:30px;
+	line-height:40px;
+}
+header b{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	background: url(images/acfun_logo_1.png) -166px -178px no-repeat;
+	margin-top: 3px
+}
+header input{
+	border:1px solid #67BDCD;
+	border-radius: 5px;
+	height:22px;
+	width: 100px;
+	outline:none;
+
+}
+#nav a span{
+	display: inline-block;
+	width: 29px;
+	height: 27px;
+	background: url(images/acfun_logo_1.png) -257px -182px no-repeat;
+	margin-top: 7px;
+	margin-left:-34px;
+
+}
+/*开始定义主体部分,一张图,一个登陆div*/
+body{
+	background: #FBFBFB;
+}
+#main{
+  width: 1160px;
+  margin: 0 auto;
+}
+.main{
+	height:500px;
+	width: 1140px;
+	position:relative;
+  left:50%;
+  margin-left: -570px;
+	padding-top: 70px;
+}
+section img{
+	float:left;
+  margin-left: 81px;
+}
+/*设置登陆注册*/
+div#account{
+	float:left;
+	min-width: 514px;
+	min-height: 300px;
+	margin-left: 40px;
+	margin-top: 15px;
+}
+#account p{
+	height:30px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	color:#666666;
+	margin-left:52px;
+	margin-bottom: 10px;
+}
+#account p b{
+	display: inline-block;
+	position: absolute;
+	width: 29px;
+	height: 27px;
+	background: url(images/acfun_logo_1.png) -167px -209px no-repeat;
+	margin-left:-50px;
+	margin-top: 2px;
+}
+#account p a{
+	display: inline-block;
+	position: absolute;
+	width: 22px;
+	height: 27px;
+	background: url(images/acfun_logo_1.png) -202px -209px no-repeat;
+	margin-left:80px;
+	margin-top: 5px;
+}
+#account input{
+	width: 310px;
+	height: 40px;
+	border:1px solid #BBBBBB;
+	margin-top: 25px;
+	box-sizing: border-box;
+	outline: none;
+	border-radius: 3px;
+	padding-left: 22px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1)
+}
+#account input:focus{
+	border:1px solid #CC0000;
+}
+#account input[type='button']{
+	width: 150px;
+	text-align: center;
+	background: #67BDCD;
+	color:#fff;
+	font-size:18px;
+	padding-left:5px;
+}
+#account a.zuce{
+	display: inline-block;
+	width:150px;
+	height:39px;
+	margin-left:4px;
+	border:1px solid #ddd;
+	text-align: center;
+	line-height: 38px;
+	font-size:18px;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1)
+}
+#account .group1{
+	position: relative;
+}
+#account .group1 b{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top:35px;
+	left:2px;
+	background: url(images/acfun_logo_1.png) -226px -210px no-repeat;
+}
+#account .group2{
+	position: relative;
+}
+#account .group2 b{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top:36px;
+	left:4px;
+	background: url(images/acfun_logo_1.png) -248px -210px no-repeat;
+}
+#account span{
+	display: inline-block;
+	width: 200px;
+	height:30px;
+	line-height: 30px;
+	background: #FF9101;
+	color:#fff;
+	border-radius: 4px;
+	text-align: center;
+	visibility: hidden;
+}
+.group3{
+	float:right;
+	margin-right: 202px;
+	margin-top: 10px;
+}
+#footer{
+  width:100%;
+  min-width: 1160px;
+	background:#ECECEC;
+	margin-top: 50px;
+}
+#footer:after{
+  content:"";display: block;clear:both;
+}
+#footer .last-div{
+  width:1066px;
+	margin:0 auto;
+	position:relative;
+	height:290px;
+}
+#footer .last-div:after{
+  content:"";display: block;clear:both;
+}
+#footer .last-div ul.one:after{
+  content:"";display: block;clear:both;
+}
+/*设置统一li宽度,左浮动,右边框*/
+#footer .one li{
+  margin-right:70px;
+	border-left:1px solid #E5E5E5;
+	height:110px;
+	float:left;
+}
+/*设置b标签,添加边框背景色*/
+#footer .one li b{
+  font-weight:normal;
+	display: inline-block;
+	background:#FD4C5D;
+	color:#fff;
+	font-size: 12px;
+	border-radius:5px;
+}
+/*设置最后个li右外边距为0,添加背景图*/
+#footer .one li:last-child{
+  margin-right: 0px;
+}
+#footer .one li span{
+  display: inline-block;
+	width:81px;
+	height:81px;
+	background: url(images/acfun_logo_1.png) no-repeat -85px -178px;
+	margin-top: 24px;
+}
+#footer .one li dl{
+  margin-top: 25px;
+	margin-left: 10px;
+}
+#footer .one li dt{
+  margin-bottom:15px;
+	font-size: 12px;
+	color:#B5B5B5;
+}
+#footer .one li dd{
+  margin-bottom: 15px;
+}
+/*这里定义第二个ul的属性,左浮动,li左浮动,设置右边距*/
+ul.two{
+  margin-top:30px;
+	margin-left:10px;
+}
+ul.two:after{
+  content:"";display: block;clear:both;
+}
+ul.two li{
+  float:left;
+	margin-right: 60px;
+}
+ul.two li p{
+  margin-bottom:5px;
+	color:#999999;
+}
+/*定义b和s背景图片*/
+ul.two li p b{
+  display: inline-block;
+	width:15px;
+	height:13px;
+	background: url(images/acfun_logo_1.png) no-repeat -346px -49px;
+	margin-right: 5px;
+}
+ul.two li p s{
+  display: inline-block;
+	width:16px;
+	height:14px;
+	background: url(images/acfun_logo_1.png) no-repeat -366px -48px;
+	margin-right: 5px;
+}
+/*定义版权区域*/
+.copyright{
+	width:700px;
+	position:absolute;
+	left:50%;
+	margin-left: -350px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.copyright i{display: inline-block;
+	width:78px;
+	height:24px;
+	background: url(images/acfun_logo_1.png) no-repeat -217px -141px;
+	margin-left: 290px;
+}
+.fixed{
+  position:fixed;
+  top:0px;
+  box-shadow: 0 3px 2px #ddd;
+  z-index: 100000;
+}
+#account{
+  position:relative;
+}
+
+.group1,.group2{
+  height: 40px;
+  margin-bottom: 30px;
+}
+form{
+  position:absolute;
+}
+input[type="checkbox"]{
+  width: 13px !important;
+  height: 13px !important;
+  box-shadow: none !important;
+}
+#account #zuce2{
+  width: 310px !important;
+  height: 40px !important;
+	background-color: #ddd ;
+}
+#account #zuce2:hover{
+  cursor:pointer;
+}
+.return{
+  color:#67BDCD;
+}
+#err,#null,#success,#success2{
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  background: #FF9101;
+  color:#fff;
+  position:fixed;
+  bottom:120px;
+  left:-150px;
+  text-align: center;
+}
+#null{
+  bottom:150px;
+}
+#success{
+	bottom:180px;
+}
+#success2{
+	bottom:210px;
+}
+input[type="button"]:hover{
+  cursor:pointer;
+}
+.last-p{
+	width: 740px;
+}

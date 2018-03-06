@@ -1,0 +1,160 @@
+/*通用样式*/
+body{
+	font:12px "microsoft yahei",Arial,sans-serif;
+	background:#FDFFFF;
+	margin:0;
+	padding:0;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+input{border:0;}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:bottom;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#FF0700;
+  cursor:pointer;
+}
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+/*开始定义搜索栏*/
+#main{
+	width: 100%;
+	min-width: 1160px;
+	background: #FDFFFF;
+}
+#search{
+	width: 980px;
+	margin:0 auto;
+	height: 120px;
+}
+#search:before{
+	display: table;
+	content:"";
+}
+.logo{
+	margin-top: 27px;
+}
+/*定义input部分*/
+.inptxt{
+	width: 340px;
+	height: 38px;
+	padding-left: 10px;
+	border:1px solid #ddd;
+	outline: none;
+	margin-top: 27px;
+	margin-left: 40px;
+	color:#666;
+}
+.inpbut{
+	height: 40px;
+	width: 80px;
+	background: #3A9CD9;
+	color:#fff;
+	font-size:15px;
+		margin-top: 28px;
+}
+.pic{
+	margin-top: 10px;
+}
+.input{
+	margin-left: 50px;
+}
+/*定义下面排序相关信息*/
+#paixu{
+	width: 980px;
+	border:1px solid #ddd;
+	height: 120px;
+	margin:0 auto;
+	background: #FFFFFF;
+	box-sizing: border-box;
+	padding:10px;
+	box-shadow: 0 0 2px #ddd 
+}
+.paixu1,.paixu2{
+	height: 30px;
+	line-height: 30px;
+}
+.paixu1{
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.paixu1 li,.paixu2 li{
+	float:left;
+		height: 25px;
+	line-height: 25px
+}
+.paixu1 li{
+	width: 72px;
+	text-align: center;
+}
+.paixu2 li{
+	width: 44px;
+	text-align: center;
+}
+#paixu span{
+	background: #ddd;
+	height: 25px;
+	line-height: 25px;
+	width: 80px;
+	text-align: center;
+	margin-right: 20px;
+}
+.normal{
+	background: #62AFE0;
+	color:#fff;
+	
+}
+#list{
+	width: 970px;
+	border:1px solid #ddd;
+
+	margin:0 auto;
+	margin-top: 20px;
+	padding:5px;
+	box-shadow: 0 0 2px #ddd;
+}
+.list1{
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+}
+.list1:after{
+	clear:both;
+	content:"";
+	display: block;
+}
+.list1 img{
+	float:left;
+	margin-left: 10px;
+	vertical-align: middle;
+}
+.list1>div{
+	margin-left: 20px;
+	width: 810px;
+}
+.list1>div>h3{
+	color:#F92556;
+	font-size:16px;
+	margin-bottom: 10px;
+}
+.list1>div>p{
+	margin-bottom: 10px;
+}
+.list1>div>p>a{
+	margin-right: 20px;
+}
+.list1>div>div{
+	margin-bottom: 10px;
+}

@@ -1,0 +1,1270 @@
+/*通用样式*/
+body{
+	font:12px "microsoft yahei",Arial,sans-serif;
+	background-color:#f8f8f8;
+	margin:0;
+	padding:0;
+}
+ul,p,h1,h2,h3,h4,h5,h6,dl,dd{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+input{border:0;}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+img{vertical-align:bottom;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#FF0700;
+  cursor:pointer;
+}
+/*页面主体宽度,以及居中设置*/
+#main,#footer{
+	/*宽度:1160px，水平居中对齐*/
+	width:1160px;
+	margin:0 auto;
+}
+.fixed{
+  position:fixed;
+  top:46px;
+  box-shadow: 0 3px 2px #ddd;
+}
+.none{
+  display: none;
+}
+.block{
+  display: block;
+}
+.normal{
+    background: #F9E7E9;
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    color: #FD5672;
+    border-radius: 5px;
+}
+/***************************************页面最顶端属性top_box开始************************************************/
+/*header部分定义开始*/
+#top_box{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 10000000;
+  box-sizing: border-box;
+  min-width: 1160px;
+}
+#top_box{
+  height:47px;
+	background-color:#fff;
+	width:100%;
+}
+/*用一个ul装下所有东西,ul浮动,li浮动,设置高度,行高*/
+#top_box >ul{
+  height: 47px;
+  margin: 0 auto;
+	width:1160px;
+  box-sizing: border-box;
+  margin-top: 0;
+}
+#top_box ul:after{
+  display: block;
+  content:"";
+  clear:both;
+}
+#top_box>ul>li{
+  float:left;
+	height:47px;
+	line-height: 47px;
+}
+/*设置第一个li的宽度*/
+#top_box>ul>li:first-child{
+  width:400px;
+}
+#top_box>ul>li:first-child>a>b{
+  display:inline-block;
+	width:86px;
+	height:26px;
+	background:url(images/acfun_logo_1.png) no-repeat -77px -16px;
+	margin-top: 8px;
+}
+/*定义第二个li的宽度,input的边框等,去除bottom的边框*/
+#top_box>ul>li:nth-child(2){
+  width:362px;
+}
+#top_box>ul>li:nth-child(2)>input{
+  border:1px solid #E5E5E5;
+	height:27px;
+	border-radius:5px;
+	color:#BBB5C5;
+	width:297px;
+	float:left;
+	margin-top:10px;
+	padding-left: 3px;
+	outline:none;
+}
+#top_box>ul>li:nth-child(2)>button{
+  border:none;
+	outline:none;
+	width:46px;
+	height:31px;
+	background:url(images/acfun_logo_1.png) no-repeat -249px -13px;
+	margin-left:-3px;
+	margin-top:9px;
+	float:left;
+}
+/*右侧下载客户端部分,主要有间距*/
+#top_box>ul>li:nth-child(3){
+  margin-left:100px;
+}
+#top_box>ul>li:nth-child(3)>a>b{
+  display: inline-block;
+	width:10px;
+	height:19px;
+	background:url(images/acfun_logo_1.png) no-repeat -170px -23px;
+	vertical-align:middle;
+}
+/*登陆部分,主要是行内快,以及间距,宽度*/
+#top_box>ul>li:nth-child(4)>a{
+  display:inline-block;
+	width:100px;
+	text-align:center;
+	cursor:pointer;
+}
+/*顶端三个小图标,先定义第一个*/
+#top_box>ul>li:nth-child(5){
+  width:40px;
+}
+#top_box>ul>li:nth-child(5)>a{
+  display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(images/acfun_logo_1.png) no-repeat -186px -23px;
+	margin-top:15px;
+}
+/*顶端三个小图标,定义第二个*/
+#top_box>ul>li:nth-child(6){
+  width:40px;
+}
+#top_box>ul>li:nth-child(6)>a{
+  display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(images/acfun_logo_1.png) no-repeat -210px -23px;
+	margin-top:15px;
+}
+/*顶端三个小图标,定义第三个*/
+#top_box>ul>li:nth-child(7){
+  width:40px;
+}
+#top_box>ul>li:nth-child(7)>a{
+  display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(images/acfun_logo_1.png) no-repeat -233px -22px;
+	margin-top:15px;
+}
+/****************************************页面最顶端属性top_box定义结束**************************************************/
+/****************************************横幅插画top_photo开始定义******************************************************/
+#top_photo{
+  position:relative;
+  width:100%;
+  min-width: 1160px;
+  margin-top: 47px;
+  z-index: -100000;
+  overflow: hidden;
+}
+/****************************************横幅插画top_photo定义结束******************************************************/
+/****************************************导航条nav开始定义**************************************************************/
+/*高度,行高,*/
+#nav{
+  height:47px;
+	line-height: 47px;
+	width:100%;
+	border-bottom:1px solid #E5E5E5;
+	background-color:#fff;
+  z-index:10000;
+}
+/*开始定义nav里面的ul宽度浮动,li浮动,li宽度,字体大小,内边距*/
+#nav ul{
+  font-size:14px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width:1160px;
+}
+#nav ul li{
+  float:left;
+	width:72px;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+#nav ul li:nth-child(15){
+  width :150px;
+}
+/*将所有a变为行内快,设置统一的宽度,让文字在宽度中居中*/
+#nav ul li a{
+  width:35px;
+	display: inline-block;
+	text-align: center;
+	height:45px;
+}
+#nav ul li a:hover{
+  border-bottom:3px solid #FD4C5D;
+}
+#nav ul li:nth-child(15)>a{
+  width :150px;
+}
+#nav ul li:nth-child(15)>a>b{
+  display:inline-block;
+	height:12px;
+	width:15px;
+	background:url(images/acfun_logo_1.png) no-repeat -299px -24px;
+}
+/****************************************导航条nav定义结束**************************************************************/
+/****************************************主体section定义开始************************************************************/
+/*开始定义main_top的属性,我觉得要加一个最小高度,以及一个上外边距*/
+#main_top{
+  margin-top:20px;
+	height:260px;
+}
+/*让左边一小块左浮动*/
+/*lunbo*/
+#slider {
+	width: 452px;
+	height:260px;
+	position:relative;
+	overflow:hidden;
+	float: left;
+}
+#slider #img {
+  width: 2540px;
+	position:absolute;
+	top: 0;  left: 0;
+	height:260px;
+}
+#slider #img li{
+  width: 452px;
+	float:left;
+	z-index:0;
+}
+#slider #index {
+    position:absolute;
+    bottom:15px;
+    right:30px;
+}
+#slider #index li {
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    display: inline-block;
+    background: #fff;
+    color: #41CDEF;    
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-left:10px;
+}
+#slider #index .index{
+  width: 15px;
+  border-radius: 5px;
+  background: #FD4C5C;
+}
+#list{
+  position:absolute;
+  left:10px;
+  bottom:10px;
+}
+#list>li{
+  display: none;
+  width: 270px;
+  height: 20px;
+  background: rgba(0,0,0,0.2)
+}
+#list .list{
+  display: inline;
+  color:#fff;
+  font-size:13px;
+}
+/*右边的一块左浮动,li浮动,并设置li的左外边距*/
+#main_top_right{
+  float:right;
+	width:708px;
+}
+#main_top_right li{
+  float:left;
+	margin-left:20px;
+	margin-bottom: 20px;
+  position: relative;
+}
+.gif{
+  width: 216px;
+  height: 120px;
+}
+#main_top_right li span{
+  position:absolute;
+  bottom:2px;
+  left:5px;
+  color:#fff;
+  font-weight: bold;
+  background: rgba(0,0,0,0.1);
+}
+/*main_top部分的属性在这里结束*/
+/**main_monkey部分从这里开始定义,这里要给个上外边距,清除浮动,让main高度正常*/
+#main_monkey{
+  margin-top:30px;
+	overflow: hidden;
+}
+/*猴子标题logo部分开始定义,加左浮动,右外边距*/
+#main_monkey ul.monkey_logo{
+  height:40px;
+	line-height:40px;
+	float:left;
+	margin-bottom:10px;
+}
+#main_monkey ul.monkey_logo li{
+  float:left;
+	margin-right:20px;
+}
+#main_monkey ul.monkey_logo li:first-child>img{
+	width:40px;
+	height:40px;
+}
+#main_monkey ul.monkey_logo li:nth-child(2){
+  font-size:16px;
+	font-weight:bold;
+}
+#main_monkey ul.monkey_logo li:nth-child(3){
+  font-size:12px;
+	color:#B2A8A6;
+}
+/*让猴子推荐内容部分左浮动,再让dl浮动,增加一个左外边距,固定的高度*/
+#main_monkey div.monkey_content{
+  float:left;
+	clear:both;
+	width:1160px;
+}
+/*为每个dl设置一个统一的高度,以最右侧图片高度为准*/
+#main_monkey div.monkey_content dl{
+  float:left;
+	margin-right:20px;
+	width:160px;
+	height:128px;
+}
+#main_monkey div.monkey_content dd{
+  line-height:20px
+}
+#main_monkey div.monkey_content dd:nth-child(3){
+  color:#999;
+}
+#main_monkey div.monkey_content span img{
+  float:right;
+}
+/*开始定义香蕉推荐部分,整体上边距为30px,分为左右两块，先定义左侧*/
+#main_banana{
+  margin-top: 30px;
+	height: 450px;
+}
+/*香蕉左侧分为上下两块,香蕉logo部分和香蕉内容主题部分,先为香蕉左侧部分添加统一宽度,左浮动*/
+#main_banana .banana_left{
+  width:900px;
+	min-height: 400px;
+	float:left;
+}
+/****************************开始定义香蕉logo部分*********************************/
+.banana_left_top{
+  height:40px;
+	float:left;
+/*	overflow: hidden;*/
+	width:880px;
+	margin-bottom: 10px;
+  position: relative;
+}
+#main_banana ul.banana_logo{
+  height:40px;
+	line-height:40px;
+	float:left;
+	margin-bottom:10px;
+}
+#main_banana ul.banana_logo li{
+  float:left;
+	margin-right:20px;
+}
+ul.banana_logo li:first-child>img{
+	height:40px;
+}
+ul.banana_logo li:nth-child(2){
+  font-size:16px;
+	font-weight:bold;
+}
+ul.banana_logo li:nth-child(3){
+  font-size:12px;
+	color:#B2A8A6;
+}
+/*香蕉logo右侧部分*/
+ul.banana_logo_right{
+  float:right;
+}
+.banana_logo_right:after{
+  display: block;
+  content:"";
+  clear: both;
+}
+ul.banana_logo_right>li{
+  float:right;
+	height:30px;
+	line-height: 30px;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+ul.banana_logo_right>li>a>div{
+  position:absolute;
+  top:0;
+  left:0;
+}
+.banana_content{
+  width:900px;
+	overflow: hidden;
+}
+.banana_content dl{
+  float:left;
+	margin-right:20px;
+	width:160px;
+	height:128px;
+	padding-bottom:20px;
+}
+.banana_content dd{
+  line-height:20px
+}
+.banana_content dd:nth-child(3){
+  color:#999;
+}
+/*开始定义香蕉部分的文章区域*/
+.banana_article{
+  float:right;
+	width:260px;
+	min-height:300px;
+}
+.banana_content dd:nth-child(3)>b{
+  display: inline-block;
+	width:14px;
+	height:13px;
+	background: url(images/acfun_logo_1.png) no-repeat -338px -24px;
+	margin-left: 30px;
+	margin-right:3px;
+}
+.banana_content dd:nth-child(3)>span{
+  color:#F8C100;
+}
+/*这里定义文章logo部分啊*/
+.banana_article_logo{
+  height:40px;
+	line-height: 40px;
+}
+.banana_article_logo>img{
+  width:40px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.banana_article b{
+  font-size:16px;
+	font-weight:bold;
+}
+/*这里开始定义文章导航条部分*/
+ul.article_nav{
+  margin-left: 5px;
+	border-bottom: 2px solid #F1F2F3;
+	height:38px;
+}
+/*恢复ul高度*/
+ul.article_nav:after{
+  content:"";
+  clear:both;
+  display: block;
+}
+ul.article_nav>li{
+  float:left;
+	text-align: center;
+	margin-right: 10px;
+	height:38px;
+}
+ul.article_nav li>a{
+  display: block;
+	height:38px;
+	line-height:38px;
+	
+}
+.normal1{
+  color:#2AB69D;
+	border-bottom: 2px solid #2AB69D;
+	
+}
+/*开始定义源氏这一块*/
+.yuanshi{
+  margin-top:8px;
+}
+.yuanshi ul{
+  float:right;
+}
+.yuanshi ul li{
+  line-height: 17px;
+}
+.yuanshi ul li>b{
+  display:inline-block;
+	width:12px;
+	height:11px;
+	background: url(images/acfun_logo_1.png) no-repeat -354px -26px;
+	margin-right: 5px;
+}
+.yuanshi ul li:not(:first-child){
+  color:#A49999;
+}
+/*开始定义文章正文区域*/
+ul.article_main{
+  margin-top:10px;
+}
+ul.article_main>li{
+  line-height: 20px;
+	margin-bottom: 8px;
+	color:#333333;
+}
+ul.article_main li:last-child>a{
+	display: block;
+	text-align: center;
+	width:260px;
+	height:20px;
+	background-color: #EEEEEE;
+	margin-bottom: 0px;
+}
+/********************************到此为止香蕉部分全部定义完了,哈哈哈**********************************/
+/********************************开始定义娱乐部分,打起精神来- -**********************************/
+#main_recreation{
+  margin-top: 30px;
+}
+#main_recreation:after{
+  content:"";display: block;clear: both;
+}
+/*定义娱乐左边统一属性*/
+.recreation_left{
+  width:880px;
+	overflow:hidden;
+	float:left;
+}
+.recreation_logo{
+  margin-bottom: 10px;
+	overflow: hidden;
+}
+ul.recreation_top_left{
+  height:40px;
+	line-height:40px;
+	float:left;
+	overflow:hidden;
+}
+ul.recreation_top_left li{
+  float:left;
+	margin-right: 20px;
+}
+ul.recreation_top_left li:first-child>img{
+	height:40px;
+}
+ul.recreation_top_left li:nth-child(2){
+  font-size: 16px;
+	font-weight:bold;
+}
+ul.recreation_top_left li:nth-child(3)>a{
+	height:20px;
+	border:1px solid #ddd;
+	padding:3px 12px;
+}
+ul.recreation_top_left li:nth-child(3)>a>b{
+	display: inline-block;
+	width:14px;
+	height:11px;
+	background:url(images/acfun_logo_1.png) no-repeat -319px -25px;
+	margin-right: 5px;
+}
+/*开始定义娱乐顶部右边部分*/
+ul.recreation_top_right{
+  float:right;
+	height:40px;
+	line-height: 40px
+}
+.recreation_top_right li{
+  float:right;
+	margin-left:20px;
+}
+ul.recreation_top_right>li:first-child>a{
+  color:#FD4C5C;
+}
+ul.recreation_top_right>li>a>b{
+  display:inline-block;
+	width:6px;
+	height:10px;
+	background: url(images/acfun_logo_1.png) no-repeat -369px -26px;
+	margin-left: 3px;
+}
+/*开始定义娱乐正文部分,dl都要浮动*/
+.recreation_content{
+  width:900px;
+}
+.recreation_content dl{
+  float:left;
+	margin-right: 19px;
+	padding-bottom:20px;
+}
+.recreation_content dl.no_bottom{
+  padding-bottom:0;
+}
+.recreation_content dd{
+  line-height:20px
+}
+.recreation_content dd:nth-child(3){
+  color:#999;
+}
+.recreation_content dd:nth-child(3)>b{
+  display: inline-block;
+	width:10px;
+	height:10px;
+	background:url(images/acfun_logo_1.png) no-repeat -312px -53px;
+	margin-right:3px;
+}
+.recreation_content dd:nth-child(3)>s{
+  display: inline-block;
+	width:12px;
+	height:11px;
+	background:url(images/acfun_logo_1.png) no-repeat -328px -51px;
+	margin-right:3px;
+	margin-bottom: -1px;
+	margin-left: 30px;
+}
+.recreation_content:after{
+  content:"";display: block;clear: both;
+}
+/************那么娱乐左边部分正式完结,要开始右边部分了****************/
+div.recreation_right{
+  float:right;
+	width:260px;
+  position:relative
+}
+/*定义右侧顶部部分*/
+.recreation_right{
+  float:right;
+}
+.recreation_right .recreation_right_top{
+  height:40px;
+	line-height: 40px;
+}
+.recreation_right_top p{
+  float:left;
+	font-size: 16px;
+	font-weight:bold;
+}
+
+.recreation_right_top li{
+  float:right;
+	height:30px;
+	line-height: 30px;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+
+/*娱乐右侧顶部定义结束*/
+.recreation_right_content{
+  position: absolute;
+  top:50px;
+  left:0;
+}
+.recreation_right_content div{
+  margin-top: 10px;
+	margin-bottom: 20px;
+}
+.recreation_right_content div ul{
+  float:right;
+	text-align: left;
+}
+.recreation_right_content div ul li{
+  line-height: 18px;
+}
+.recreation_right_content div ul li:not(:first-child){
+  color:#999999;
+}
+.recreation_right_content div ul li:nth-child(3)>b{
+  display: inline-block;
+	width:10px;height:10px;
+	background:url(images/acfun_logo_1.png) no-repeat -312px -53px;
+	margin-right:3px;
+	margin-left: 1px;
+}
+.recreation_right_content div ul li:nth-child(3)>s{
+  display: inline-block;
+	background:url(images/acfun_logo_1.png) no-repeat -328px -51px;
+	width:12px;
+	height:11px;
+	margin-left: 10px;
+	margin-right: 3px;
+}
+.recreation_right_content div:nth-child(2) ul{
+  padding-right:5px;
+}
+/*最后定义娱乐底部了*/
+.recreation_bottom li{
+  height:27px;
+	line-height: 25px;
+}
+.recreation_bottom li>a>span{
+  display: inline-block;
+	width:22px;
+}
+.recreation_bottom li:last-child>a{
+  display: inline-block;
+	width:260px;
+	text-align: center;
+	background: #EEEEEE;
+}
+/*******************************娱乐部分正式定义完毕********************************/
+/*******************************开始定义番剧,好累啊~********************************/
+#main_opera{margin-top: 30px;
+}
+#main_opera:after{
+  content:"";display: block;
+	clear: both;
+}
+.opera_left{
+  width:880px;
+	min-height:300px;
+	float:left;
+}
+/*开始定义番剧左侧顶部*/
+.opera_left_top:after{
+  content:"";display: block;
+	clear: both;
+}
+.opera_left_top>ul>li{
+  float:left;
+	height:40px;
+	line-height: 40px;
+	margin-right: 20px;
+}
+.opera_left_top>ul>li>img{
+  width:40px;}
+.opera_left_top>ul>li:nth-child(2){
+  font-size:16px;
+	font-weight:bold;
+}
+.opera_left_top>ul>li:nth-child(3){
+  height:25px;
+	line-height: 20px;
+	margin-top: 10px;
+	
+}
+.opera_left_top>ul>li:nth-child(3)>a{
+  display: inline-block;
+	width:70px;
+	height:20px;
+	color:#FD4C5D;
+	text-align: center;
+	margin-bottom: 5px;
+	background: #FBE9EB;
+	border-radius:2px;
+}
+.opera_left_top p{
+  float:right;
+	line-height: 40px;
+	color:#FD4C5D;
+}
+.opera_left_top p>b{
+  display: inline-block;
+	width: 6px;
+    height: 10px;
+    background: url(images/acfun_logo_1.png) no-repeat -369px -26px;
+    margin-left: 3px;
+}
+/**开始定义番剧正文部分,ul设置宽度,左浮动,上下左边框,倒角*/
+.opera_content{
+  width:878px;
+	float:left;
+	border:1px solid #F0F0F0;
+	margin-top:10px;
+	min-height: 200px;
+	border-radius:5px;
+	background:#fff;
+}
+/*设置每个li左浮动,统一宽度,右边距,行内元素居中*/
+.opera_content li{
+  float:left;
+	width:124px;
+	border-right:1px solid #F0F0F0;
+	height:530px;
+	text-align:center;
+}
+.opera_content li:last-child{
+  border-right:0;}
+/*定义p元素的高度*/
+.opera_content>li>p{
+	border-bottom:1px solid #F0F0F0;
+	height:30px;
+	line-height: 30px;
+	font-size:15px;
+}
+/*统一定义dl上下外边距*/
+.opera_content>li>dl{
+  margin-top: 8px;
+	margin-bottom:10px;
+}
+.opera_content li dl dt{
+  margin-bottom: 5px;
+}
+/*让dd左对齐,再统一设置左外边距*/
+.opera_content li dl dd{
+  margin-bottom: 15px;
+	text-align: left;
+	margin-left: 5px;
+}
+.opera_content li dl dd a{
+  font-size: 12px;
+	color:#000000;
+}
+.opera_content li dl dd a:hover{
+  color:#FD4C5D;
+}
+.opera_content li dl dd div{
+  color:#999999;
+}
+.opera_content li dl dd .red{
+  color:#FD4C5D;
+	margin-top:5px;
+}
+/*设置鼠标移动上去颜色变化,先定义整体li,在单独定义p*/
+.opera_content li:hover{
+  background:#FBE9EB;
+}
+.opera_content li:hover>p{
+  background:#FD4C5D;
+}
+/*开始定义番剧右侧部分*/
+.opera_right{
+  width:260px;
+	float:right;
+}
+.opera_right p{
+  height:40px;
+	line-height:40px;
+	margin-bottom:10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*定义每个div的下内边距以及下外边距*/
+.opera_right div{
+  background: #fff;
+	padding-bottom: 5px;
+	margin-bottom: 30px;
+}
+.opera_right div:last-child{margin-bottom:0;}
+.opera_right div span{
+	display: inline-block;
+	margin-left: 10px;
+	color:#999;
+}
+/****************************开始定义游戏部分****************************/
+.recreation_right_content div ul.game_three{
+  margin-right: 33px;
+}
+/****************************开始定义动画部分****************************/
+.recreation_right_content div ul.cartoon_three{
+  margin-right: 11px;
+}
+/****************************开始定义体育部分****************************/
+/****************************开始定义音乐部分****************************/
+/****************************开始定义舞蹈部分****************************/
+/****************************开始定义广告部分****************************/
+#ad{
+  margin-top: 30px;
+}
+#ad:after{
+  content:"";
+  display: block;
+	clear:both;
+}
+#ad a{
+  float:left;
+}
+#ad .ad_left{
+  display: inline-block;
+	margin-right:20px;
+}
+/****************************开始定义尾部****************************/
+#footer{
+  width:100%;
+	background:#ECECEC;
+	margin-top: 50px;
+  min-width: 1160px;
+}
+#footer:after{
+  content:"";display: block;clear:both;
+}
+#footer .last-div{
+  width:1066px;
+	margin:0 auto;
+	position:relative;
+	height:290px;
+}
+#footer .last-div:after{
+  content:"";display: block;clear:both;
+}
+#footer .last-div ul.one:after{
+  content:"";display: block;clear:both;
+}
+/*设置统一li宽度,左浮动,右边框*/
+#footer .one li{
+  margin-right:70px;
+	border-left:1px solid #E5E5E5;
+	height:110px;
+	float:left;
+}
+/*设置b标签,添加边框背景色*/
+#footer .one li b{
+  font-weight:normal;
+	display: inline-block;
+	background:#FD4C5D;
+	color:#fff;
+	font-size: 12px;
+	border-radius:5px;
+}
+/*设置最后个li右外边距为0,添加背景图*/
+#footer .one li:last-child{
+  margin-right: 0px;
+}
+#footer .one li span{
+  display: inline-block;
+	width:81px;
+	height:81px;
+	background: url(images/acfun_logo_1.png) no-repeat -85px -178px;
+	margin-top: 24px;
+}
+#footer .one li dl{
+  margin-top: 25px;
+	margin-left: 10px;
+}
+#footer .one li dt{
+  margin-bottom:15px;
+	font-size: 12px;
+	color:#B5B5B5;
+}
+#footer .one li dd{
+  margin-bottom: 15px;
+}
+/*这里定义第二个ul的属性,左浮动,li左浮动,设置右边距*/
+ul.two{
+  margin-top:30px;
+	margin-left:10px;
+}
+ul.two:after{
+  content:"";display: block;clear:both;
+}
+ul.two li{
+  float:left;
+	margin-right: 60px;
+}
+ul.two li p{
+  margin-bottom:5px;
+	color:#999999;
+}
+/*定义b和s背景图片*/
+ul.two li p b{
+  display: inline-block;
+	width:15px;
+	height:13px;
+	background: url(images/acfun_logo_1.png) no-repeat -346px -49px;
+	margin-right: 5px;
+}
+ul.two li p s{
+  display: inline-block;
+	width:16px;
+	height:14px;
+	background: url(images/acfun_logo_1.png) no-repeat -366px -48px;
+	margin-right: 5px;
+}
+/*定义版权区域*/
+.copyright{
+	width:700px;
+	position:absolute;
+	left:50%;
+	margin-left: -350px;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+.copyright i{display: inline-block;
+	width:78px;
+	height:24px;
+	background: url(images/acfun_logo_1.png) no-repeat -217px -141px;
+	margin-left: 260px;
+}
+/*开始定义音乐部分*/
+.recreation_right_content .music_one{
+  padding-right: 19px;
+}
+.recreation_right_content #music_two{
+  padding-right: 39px;
+}
+/*开始定义舞蹈部分*/
+#dance_one{
+  padding-right: 37px;
+}
+#dance_two{
+  padding-right: 25px;
+}
+/*开始定义科技部分*/
+#science_three{
+  padding-right: 28px;
+}
+#science_one{
+  padding-right: 14px;
+}
+
+/*设置登陆窗口绝对定位,父元素相对定位*/
+/*图片阴影部分*/
+#ad img,.opera_right img:hover{
+  transition:all 1s;
+}
+#ad img:hover,.opera_right img:hover{
+	box-shadow: 5px 5px 2px 2px rgba(0,0,0,.1);
+	transform: translate(-2px,-2px);
+}
+
+.opera_right span{
+	margin-top: 1px;
+}
+/*nav部分使用事件做个下拉,对应导航条不同的频道*/
+#nav{
+	/*position:relative;*/
+	 animation-duration: 1.5s;
+  width: 100%;
+  min-width: 1160px;
+}
+#nav div{
+	position:absolute;
+	background-color: rgba(255,255,255,0.8);
+	height:50px;
+	top:47px;
+	left:0;
+	box-shadow:3px 3px 1px 1px rgba(0,0,0,0.1);
+	z-index: 1000000;
+	display: none;
+  
+}
+#nav ul li:nth-child(2) ul{
+	margin-left:115px;
+}
+#nav ul li:nth-child(3) ul{
+	margin-left:120px;
+}
+#nav ul li:nth-child(4) ul{
+	margin-left:200px;
+}
+#nav ul li:nth-child(5) ul{
+	margin-left:280px;
+}
+#nav ul li:nth-child(6) ul{
+	margin-left:350px;
+}
+#nav ul li:nth-child(7) ul{
+	margin-left:420px;
+}
+#nav ul li:nth-child(8) ul{
+	margin-left:480px;
+}
+#nav ul li:nth-child(9) ul{
+	margin-left:560px;
+}
+#nav ul li:nth-child(10) ul{
+	margin-left:630px;
+}
+#nav ul li:nth-child(11) ul{
+	margin-left:700px;
+}
+#nav ul li:nth-child(12) ul{
+	margin-left:770px;
+}
+#nav ul li:nth-child(13) ul{
+	margin-left:830px;
+}
+#nav ul li:nth-child(14) ul{
+	margin-left:900px;
+}
+#nav div ul li{
+	float:left;
+	font-size: 13px;
+}
+#nav ul li div li a:hover{
+	color:#e4393c;
+}
+/*JS问题重置部分css属性:*/
+.banana_logo_right,.banana_logo_right{
+  float:right;
+  height: 40px;
+}
+/*后期效果css定制*******************************************/
+#top_box>ul>li:nth-child(2){
+  position:relative;
+}
+#search{
+  position:absolute;
+  top:42px;
+  left:0;
+  width: 300px !important;
+  height: 248px;
+  z-index: 10000000;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0px 0px  5px #ddd;
+  border-radius: 3px;
+}
+#search>li{
+  height: 35px;
+  line-height: 35px;
+  box-sizing:border-box;
+  padding-left: 10px;
+}
+#search>li>a{
+  color:#A9A9A9
+}
+#search>li:first-child{
+  border-bottom:1px solid #EEEEEE
+}
+#search>li:hover{
+  background: #FCB7BC;
+  cursor: pointer;
+}
+#search>li:hover a{
+  color:#FD4C5B;
+}
+#search>li>a>span{
+  margin-right: 15px;
+}
+#search .color1{
+  color:#FD4C5D
+}
+/*开始定义轮播右侧鼠标划入显示播放按钮*/
+#main_top_right>ul>li>a>b{
+  background: rgba(22,50,52,0.5);
+  width: 216px;
+  height: 120px;
+  position:absolute;
+  top:0;
+  left:0;
+}
+#main_top_right>ul>li>a>b>s{
+  position:absolute;
+  width: 30px;
+  height:44px;
+  top:50%;
+  left:50%;
+  margin-left:-16px;
+  margin-top:-22px;
+  background:url(images/acfun_logo_1.png) -316px -65px no-repeat;
+}
+#main{
+  position:relative;
+  z-index: -1;
+}
+body{
+  position:relative;
+  z-index: -100000000000;
+}
+/*香蕉榜的周榜日榜切换*/
+.banana_left{
+  position:relative;
+}
+.banana_content{
+  position:absolute;
+  top:50px;
+  left:0px;
+}
+/*开始定义源氏部分效果*/
+.banana_article{
+  position:relative;
+}
+#zonghe,#gzgq,#dmwh,#mhxs,#youxi{
+  position:absolute;
+  top:77px;
+  left:0;
+  height:340px;
+}
+#zonghe img,#gzgq img ,#dmwh img,#mhxs img,#youxi img{
+  width: 90px;
+}
+#recreation2 img,#keji02 img{
+  width: 90px;
+}
+.gif2{
+  width: 160px;
+  height: 90px;
+}
+.gif3{
+  width: 90px;
+  height: 50px;
+}
+/*开始定义游戏*/
+.recreation_right{
+  position:relative;
+  height: 500px;
+}
+#gameph:after{
+  display: block;
+  content:"";
+  clear:both;
+}
+#section1 img,#tiyu2 img{
+  width: 90px;
+}
+#tiyu,#music,#yingshi,#binv,#yutang,#keji{
+  height: 350px;
+}
+#dance{
+  height: 370px;
+}
+.xiazai{
+  position:relative;
+}
+.xiazai img{
+  position:absolute;
+  top:45px;
+  left:-30px;
+  box-shadow:0 3px 4px #ddd;
+}
+/*鼠标划入图片变大效果*/
+#main_monkey dl:not(:last-child) dt,
+#banana1 dt,
+#banana2 dt,
+.recreation_content dl:not(:first-child) dt{
+  overflow:hidden;
+  height: 160px;
+  height: 90px;
+}
+#main_monkey dl:not(:last-child) dt img,
+#banana1 dt img,
+#banana2 dt img,
+.recreation_content dl:not(:first-child) dt img{
+  transition: all 2s;
+}
+#main_monkey dl:not(:last-child) dt img:hover,
+#banana1 dt img:hover,
+#banana2 dt img:hover,
+.recreation_content dl:not(:first-child) dt img:hover{
+  transform: scale(1.2);
+}
+/*返回头部定位*/
+#totop{
+  width: 52px;
+  height: 52px;
+  background: #fff;
+  position:fixed;
+  right:5px;
+  top:500px;
+  box-shadow: 0 4px 3px #ddd;
+}
+#totop:hover{
+  cursor:pointer;
+}
